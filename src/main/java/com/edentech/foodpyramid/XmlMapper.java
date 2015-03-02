@@ -16,9 +16,9 @@ import java.io.StringReader;
 import java.util.logging.Level;
 import java.util.logging.Logger;
 
-
-
-
+/**
+ * Mapper class that reads the food pyramid xml.  Notice the tags below that can be changed.
+ */
 public class XmlMapper extends
         Mapper<LongWritable, Text, Text, Text> {
 

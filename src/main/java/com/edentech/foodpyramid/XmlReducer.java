@@ -6,6 +6,9 @@ import org.apache.hadoop.mapreduce.Reducer;
 import java.io.IOException;
 
 
+/**
+ * Reducer class that spits out the food type and the different servings
+ */
 public class XmlReducer extends
         Reducer<Text, Text, Text, Text> {
 

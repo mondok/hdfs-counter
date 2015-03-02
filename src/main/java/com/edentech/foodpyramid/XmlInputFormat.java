@@ -16,7 +16,7 @@ import org.apache.hadoop.mapreduce.lib.input.TextInputFormat;
 
 
 /**
- * Reads records that are delimited by a specifc begin/end tag.
+ * Reads records that are delimited by the tags that were set in XmlDriver.java
  */
 public class XmlInputFormat extends  TextInputFormat {
 

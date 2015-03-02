@@ -36,6 +36,7 @@ public class XmlDriver {
 
         Configuration conf = new Configuration();
 
+        // set your XML tags here
         conf.set("xmlinput.start", "<Food_Display_Row>");
         conf.set("xmlinput.end", "</Food_Display_Row>");
         conf.set("io.serializations",
@@ -47,7 +48,6 @@ public class XmlDriver {
         FileInputFormat.setInputPaths(job, input);
         job.setJarByClass(XmlDriver.class);
         job.setMapperClass(XmlMapper.class);
-//        job.setNumReduceTasks(0);
         job.setInputFormatClass(XmlInputFormat.class);
         job.setOutputKeyClass(Text.class);
         job.setOutputValueClass(Text.class);
